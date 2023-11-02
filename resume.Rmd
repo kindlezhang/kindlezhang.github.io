@@ -1,0 +1,9 @@
+---
+title: "resume"
+output: html_document
+---
+
+# Here is my resume
+
+![](images/cv_1.png)
+![](images/cv_2.png)

@@ -1,0 +1,108 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Kindle Zhang fantastic page
+
+![](images/background.jpg)
+
+# Introductory
+
+This is a page which collects all my fundamental information and my historical projects.
+
+you can find my resume and academic history [here](resume.html).
+
+you can find my github homepage [here](https://github.com/kindlezhang)
+
+# Referance
+
+I learned a lot form the P8105, the homepage of the lesson is [here](https://p8105.com/index.html)
+
+The data I used comes from the [google](https://www.google.com/)
+
+# Problem 2
+
+the dashboard I made was [here](dashboard.html)
+
+```{r, include = FALSE, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+
+```{r}
+data("ny_noaa")
+```
+
+I select the data in 2007, collected by 5 id whose data is the most and drop all NA data.
+
+```{r}
+ny_noaa_stat = 
+  ny_noaa |> 
+    separate(date, into = c("year", "date"), sep = 4) |> 
+    filter(year == 2007) |> 
+    drop_na(tmax, tmin) |> 
+    group_by(id) |> 
+    summarise(n = n()) |> 
+    arrange(desc(n)) |> 
+    head(5)
+```
+
+```{r}
+ny_noaa_sample = 
+  ny_noaa |> 
+  separate(date, into = c("year", "date"), sep = 4) |> 
+  filter(year == 2007) |> 
+  drop_na(tmax, tmin) |> 
+  filter(id %in% c("USC00300023", "USC00300055", "USC00300183", "USC00300321", "USC00300331")) |> 
+  select(id, prcp, snow, tmax, tmin)
+```
+
+
+## Plotly scatterplot
+
+we want to analyze the relationship between the temperature(tmin and tmx) and the Precipitation.
+
+```{r}
+ny_noaa_sample |>
+  mutate(
+    text_label = 
+      str_c("precipitation:", prcp, "\nsnow:", snow)) |> 
+  plot_ly(
+    x = ~tmin, 
+    y = ~tmax, 
+    type = "scatter", 
+    mode = "markers",
+    color = ~prcp, 
+    text = ~text_label, 
+    alpha = 0.5)
+```
+
+## Plotly boxplot
+
+we analyze the precipitation collected by different id
+
+```{r}
+ny_noaa_sample |> 
+  mutate(id = fct_reorder(id, prcp)) |> 
+  plot_ly(y = ~prcp, color = ~id, type = "box", colors = "viridis")
+```
+
+## Plotly barchart
+
+At last we will make plot to verify how many data of prcp did every id collect.
+
+```{r}
+ny_noaa |> 
+    separate(date, into = c("year", "date"), sep = 4) |> 
+    filter(year == 2007) |> 
+    drop_na(tmax, tmin) |> 
+    count(id) |> 
+    mutate(id = fct_reorder(id, n)) |> 
+    plot_ly(x = ~id, y = ~n, color = ~id, type = "bar", colors = "viridis")
+```
+

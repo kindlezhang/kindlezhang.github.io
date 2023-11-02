@@ -1,0 +1,80 @@
+---
+title: "dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+```
+
+```{r}
+ny_noaa_stat = 
+  ny_noaa |> 
+    separate(date, into = c("year", "date"), sep = 4) |> 
+    filter(year == 2007) |> 
+    drop_na(tmax, tmin) |> 
+    group_by(id) |> 
+    summarise(n = n()) |> 
+    arrange(desc(n)) |> 
+    head(5)
+```
+
+```{r}
+ny_noaa_sample = 
+  ny_noaa |> 
+  separate(date, into = c("year", "date"), sep = 4) |> 
+  filter(year == 2007) |> 
+  drop_na(tmax, tmin) |> 
+  filter(id %in% c("USC00300023", "USC00300055", "USC00300183", "USC00300321", "USC00300331")) |> 
+  select(id, prcp, snow, tmax, tmin)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+ny_noaa_sample |>
+  mutate(
+    text_label = 
+      str_c("precipitation:", prcp, "\nsnow:", snow)) |> 
+  plot_ly(
+    x = ~tmin, 
+    y = ~tmax, 
+    type = "scatter", 
+    mode = "markers",
+    color = ~prcp, 
+    text = ~text_label, 
+    alpha = 0.5)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+ny_noaa_sample |> 
+  mutate(id = fct_reorder(id, prcp)) |> 
+  plot_ly(y = ~prcp, color = ~id, type = "box", colors = "viridis")
+```
+
+### Chart C
+
+```{r}
+ny_noaa |> 
+    separate(date, into = c("year", "date"), sep = 4) |> 
+    filter(year == 2007) |> 
+    drop_na(tmax, tmin) |> 
+    count(id) |> 
+    mutate(id = fct_reorder(id, n)) |> 
+    plot_ly(x = ~id, y = ~n, color = ~id, type = "bar", colors = "viridis")
+```
+
