@@ -6,7 +6,7 @@
 
 main:
   - title: "Course Projects"
-    url: /course-projects/
+    url: /courseprojects/
 
   - title: "Publications"
     url: /publications/
