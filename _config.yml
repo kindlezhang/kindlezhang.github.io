@@ -224,9 +224,6 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  courseprojects:
-    output: true
-    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -282,14 +279,6 @@ defaults:
       type: talks
     values:
       layout: talk
-      author_profile: true
-      share: true
-  # _courseprojects
-  - scope:
-      path: ""
-      type: courseprojects
-    values:
-      layout: single
       author_profile: true
       share: true
 
