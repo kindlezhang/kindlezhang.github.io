@@ -22,10 +22,10 @@ repository               : "kindlezhang/kindlezhang.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Kindle Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  bio              : "A biostatistician"
+  location         : "617 West 168th Street Apt # 0712-1 New York, New York 10032"
   employer         : "Red Brick University"
   uri              : # URL
   email            : "none@example.org" 
