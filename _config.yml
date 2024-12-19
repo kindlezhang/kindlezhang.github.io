@@ -21,7 +21,7 @@ repository               : "kindlezhang/kindlezhang.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "../images/kindle.png"
   name             : "Kindle Zhang"
   pronouns         : # example: "she/her"  
   bio              : "A biostatistician"
