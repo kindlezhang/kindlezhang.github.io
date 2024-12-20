@@ -24,8 +24,8 @@ data science
 * I studied basic machine learning knowledge.
 * I studied many model training methods: Lasso, Ridge, Elastic Net, K-Nearest Neighbors (KNN), Principal Components Regression (PCR), Generalized Additive Model (GAM), Multivariate Adaptive Regression Splines (MARS)
 * [Here](../files/P8106_midterm_report.pdf) is a project exploring the factors associated with recovery time for COVID-19 patients.
-* 
-* [Here](../files/ds2_final.pdf) is a project exploring the factors affecting the severity of COVID-19.
+* classfication tree and 
+* [Here](../files/ds_final.pdf) is a project exploring the factors affecting the severity of COVID-19.
 
 
 advanced computing
