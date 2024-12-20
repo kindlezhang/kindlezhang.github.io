@@ -28,7 +28,7 @@ data science
 * [Here](../files/ds_final.pdf) is a project exploring the factors affecting the severity of COVID-19.
 
 
-advanced computing
+advanced statistical computing
 ======
 * I studied Monte-Carlo-methods, MC integration, optimization methods(Newton's method, EM algorithm), resampling methods(bootstrap) and Markov Chain Monte Carlo(MCMC).
 * [Here](../files/advanced_mid.pdf) is a project comparing bootstrap methods for propensity score matching.
