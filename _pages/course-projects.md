@@ -31,9 +31,12 @@ advanced computing
 ======
 
 
+
 longitudinal analysis
 ======
-
+* I learned the transition from linear regression with independent observations to longitudinal data analysis with correlated observations.
+* I studied the difference between marginal model (GEE/gls) and the GLMM/GLM model (Max likelihood)
+* [Here](../files/longi_final_project_qz2527.pdf) is a project exploring wihch model is better when .
 
 survival analysis
 ======
