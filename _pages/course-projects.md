@@ -31,8 +31,8 @@ data science
 advanced computing
 ======
 * I studied Monte-Carlo-methods, MC integration, optimization methods(Newton's method, EM algorithm), resampling methods(bootstrap) and Markov Chain Monte Carlo(MCMC).
-* [Here](../files/advanced_mid.pdf) is a project exploring the factors affecting the severity of COVID-19.
-* [Here](../files/p8160_proj2_report.pdf) is a project exploring the factors affecting the severity of COVID-19.
+* [Here](../files/advanced_mid.pdf) is a project comparing bootstrap methods for propensity score matching.
+* [Here](../files/p8160_proj2_report.pdf) is a project exploring single-cell gene expressions and clustering.
 
 
 longitudinal analysis
