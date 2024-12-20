@@ -24,6 +24,7 @@ data science
 * I studied basic machine learning knowledge.
 * I studied many model training methods: Lasso, Ridge, Elastic Net, K-Nearest Neighbors (KNN), Principal Components Regression (PCR), Generalized Additive Model (GAM), Multivariate Adaptive Regression Splines (MARS)
 * [Here](../files/P8106_midterm_report.pdf) is a project exploring the factors associated with recovery time for COVID-19 patients.
+* 
 * [Here](../files/ds2_final.pdf) is a project exploring the factors affecting the severity of COVID-19.
 
 
@@ -41,6 +42,7 @@ longitudinal analysis
 
 survival analysis
 ======
-
+* I learned non-parametric methods in survival analysis, such as the Kaplan-Meier (K-M) curve, semi-parametric methods like the Cox Proportional Hazards (Cox PH) model, and parametric methods, assuming Y follows distributions such as Weibull, Exponential, Log-Logistic, or General Gamma.
+* [Here](../files/survival_final_7.pdf) is a project exploring the factors affecting the survival risk for Breast Cancer.
 
 
