@@ -21,8 +21,10 @@ data science
 * Familiarized with basic R programming skills.
 * Learned to use R for interaction with other applications, such as Shiny and web scraping.
 * [Here](https://kindlezhang.github.io/p8105_final_project/) is a group presentation in class analyzing the corruption index. I use shiny and make a website.
+* I studied basic machine learning knowledge.
 * I studied many model training methods: Lasso, Ridge, Elastic Net, K-Nearest Neighbors (KNN), Principal Components Regression (PCR), Generalized Additive Model (GAM), Multivariate Adaptive Regression Splines (MARS)
 * [Here](../files/P8106_midterm_report.pdf) is a project exploring the factors associated with recovery time for COVID-19 patients.
+* [Here](../files/ds2_final.pdf) is a project
 
 
 advanced computing
