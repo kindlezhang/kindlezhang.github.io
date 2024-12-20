@@ -18,6 +18,16 @@ biostatistic method
 
 data science
 ======
+* Familiarized with basic R programming skills.
+* Learned to use R for interaction with other applications, such as Shiny and web scraping.
+* [Here](https://kindlezhang.github.io/p8105_final_project/) is a group presentation in class analyzing the corruption index. I use shiny and make a website.
+
+
+
+
+
+
+
 
 
 
@@ -34,6 +44,4 @@ survival analysis
 ======
 
 
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
