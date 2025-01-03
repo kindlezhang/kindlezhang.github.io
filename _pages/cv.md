@@ -11,54 +11,42 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* M.S. in Biostatistics, Columbia University, 2025 (expected)
+* B.S. in Economics, Beijing Normal University, 2019 
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 03/2021-03/2022: Research Assistant working remotely
+  * Colorado State University 
+  * Duties includes: Performed data collection, documentation, coding, prepared charts and graphs, and completed data analyses
+  * Supervisor: Prof.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 04/2020-12/2020: Sales Manager
+  * Ningbo Bank
+  * Duties includes: 
+  * Supervisor: 
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 03/2019-07/2019: Intern of Catalogue Group 
+  * QY Research
+  * Duties included: Implemented catalog translation and summarization based on VBA programming in Excel, and improved documentation by using Python
+  * Supervisor: Junping Yang
+
+* 02/2018-04/2018: Intern of Blue Lotus Research Assistant
+  * Creek Wood Investment
+  * Duties included: Conducted research on various industries (eg. short video, game, automobile) and drafted research reports.
+  * Supervisor: Zixiao Yang
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Statistical software: R, stata, SAS(pass basic exam)
+* Data base: Mysql
+* Programing skills: python, Java
+* Others: Latex, shiny, excel(VBA)
 
-Publications
+Publications or Talks
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
