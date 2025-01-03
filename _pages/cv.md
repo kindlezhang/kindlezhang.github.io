@@ -16,6 +16,11 @@ Education
 
 Work experience
 ======
+* 08/2024-12/2024: Teaching Assistant for Aplied Regression 1
+  * Columbia University 
+  * Duties includes: Answer student questions, grade assignments, conduct exams, organize office hours, and assist the professor in completing teaching tasks.
+  * Supervisor: Prof.Lemeshow
+
 * 03/2021-03/2022: Research Assistant working remotely
   * Colorado State University 
   * Duties includes: Performed data collection, documentation, coding, prepared charts and graphs, and completed data analyses
